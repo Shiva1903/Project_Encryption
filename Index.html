@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Image Encryption App</title>
-  <!-- Meta tags to discourage caching (note: these do not affect browser history) -->
-  <meta http-equiv="Cache-Control" content="no-store" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -70,9 +66,6 @@
   </div>
 
   <script>
-    // On load, replace the current history state to reduce extra entries.
-    window.history.replaceState(null, null, window.location.href);
-
     // Simple encryption/decryption function: reverse the string.
     function encrypt(text) {
       return text.split('').reverse().join('');
